@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Youtube Downloader</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        img{
+            min-height: 100%%;
+            min-width: 100%%;
+        }
+        body{
+            background: url('/static/img/YouTube-Pixabay.jpg');
+            background-size: 100%;
+        }
+        header {
+            background-color: rgb(202, 96, 96);
+            position: relative;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 200px;
+        }
+        .logo{
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.8em;
+        }
+        .main-btn {
+            color: rgb(202, 96, 96);
+            background-color: rgb(54, 51, 65);
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 600;
+            display: inline-block;
+            position: relative;
+            padding: 0.9375em 2.1875em;
+            letter-spacing: 1px;
+            border-radius: 15px;
+        }
+        @media (max-width:1023px){
+            header{
+                padding: 12px 20px;
+            }
+        }
+        @media (max-width:600px){
+            .main-btn {
+                font-size: 0.8em;
+            }
+        }
+        @media (max-width:500px){
+            .main-btn {
+                font-size: 0.6em;
+            }
+            .logo{
+                font-size: 1.3em;
+            }
+        }
+        @media (max-width:350px){
+            .main-btn {
+                font-size: 0.5em;
+            }
+        }
+    </style>
+</head>
+    
+<body>
+    <header>
+        <a href="#" class="logo">Khalil</a>
+        <a href="https://mohammedil.github.io/khalil/" class="main-btn">Vist my Website</a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <center><main role='main'>
+        {% block content %}
+            
+        {% endblock content %}
+    </main></center>
+</body>
+</html>
